@@ -1,0 +1,42 @@
+﻿My notes:
+
+Structure: 
+
+NB commands: 
+dotnet tool install --local dotnet-ef
+dotnet tool uninstall --global dotnet-ef
+dotnet tool install --global dotnet -ef --version 3.0.0
+dotnet tool install --global dotnet-ef
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Swash.AspMetCore
+dotnet ef migrations add Initial
+dotnet ef database update --context *name of context*
+
+Steps: 
+1. Install packages: 
+	1.1 Microsoft.EntityFrameworkCore.Sqlite
+	1.2 Microsoft.EntityFrameworkCore.Design
+	1.3 Swashbuckle.AspNetCore.Swagger
+	1.4 Swashbuckle.AspNetCore.SwaggerGen
+2. Implementing product catalogue: 
+	2.1 Structuring the project 
+		2.1.1 Creating folders -> database: contains classes 
+							   -> models: 
+									     -> product folder: 
+										 -> shared fodler: 
+							   -> Repositories: 
+										 -> Implementations: 
+							   -> Services: 
+										 -> Implementations: 
+							   -> Messages: 
+										 -> DTOs: 
+										 -> Request: 
+										 -> Response: 
+	2.2 Creating the following models: Product, Category & Brand
+		With regards to datetimeoff: https://stackoverflow.com/questions/4331189/datetime-vs-datetimeoffset
+	2.3 Executing database migrations for product catalogue models
+	2.3 Creating catalogue repository 
+	2.4 Creating catalogue DTOs
+	2.5 Creating catalogue service
+	2.6 Implementing product catalogue controller
