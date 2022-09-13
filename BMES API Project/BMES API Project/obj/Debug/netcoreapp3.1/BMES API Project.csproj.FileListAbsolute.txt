@@ -1,0 +1,21 @@
+C:\Users\rowan\Documents\Personal\Personal\Personal\Work\Projects\Udemy-C#-Projects\BMES API Project\BMES API Project\BMES API Project\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\rowan\Documents\Personal\Personal\Personal\Work\Projects\Udemy-C#-Projects\BMES API Project\BMES API Project\BMES API Project\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\rowan\Documents\Personal\Personal\Personal\Work\Projects\Udemy-C#-Projects\BMES API Project\BMES API Project\BMES API Project\bin\Debug\netcoreapp3.1\BMES API Project.exe
+C:\Users\rowan\Documents\Personal\Personal\Personal\Work\Projects\Udemy-C#-Projects\BMES API Project\BMES API Project\BMES API Project\bin\Debug\netcoreapp3.1\BMES API Project.deps.json
+C:\Users\rowan\Documents\Personal\Personal\Personal\Work\Projects\Udemy-C#-Projects\BMES API Project\BMES API Project\BMES API Project\bin\Debug\netcoreapp3.1\BMES API Project.runtimeconfig.json
+C:\Users\rowan\Documents\Personal\Personal\Personal\Work\Projects\Udemy-C#-Projects\BMES API Project\BMES API Project\BMES API Project\bin\Debug\netcoreapp3.1\BMES API Project.runtimeconfig.dev.json
+C:\Users\rowan\Documents\Personal\Personal\Personal\Work\Projects\Udemy-C#-Projects\BMES API Project\BMES API Project\BMES API Project\bin\Debug\netcoreapp3.1\BMES API Project.dll
+C:\Users\rowan\Documents\Personal\Personal\Personal\Work\Projects\Udemy-C#-Projects\BMES API Project\BMES API Project\BMES API Project\bin\Debug\netcoreapp3.1\BMES API Project.pdb
+C:\Users\rowan\Documents\Personal\Personal\Personal\Work\Projects\Udemy-C#-Projects\BMES API Project\BMES API Project\BMES API Project\obj\Debug\netcoreapp3.1\BMES API Project.csproj.AssemblyReference.cache
+C:\Users\rowan\Documents\Personal\Personal\Personal\Work\Projects\Udemy-C#-Projects\BMES API Project\BMES API Project\BMES API Project\obj\Debug\netcoreapp3.1\BMES API Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rowan\Documents\Personal\Personal\Personal\Work\Projects\Udemy-C#-Projects\BMES API Project\BMES API Project\BMES API Project\obj\Debug\netcoreapp3.1\BMES API Project.AssemblyInfoInputs.cache
+C:\Users\rowan\Documents\Personal\Personal\Personal\Work\Projects\Udemy-C#-Projects\BMES API Project\BMES API Project\BMES API Project\obj\Debug\netcoreapp3.1\BMES API Project.AssemblyInfo.cs
+C:\Users\rowan\Documents\Personal\Personal\Personal\Work\Projects\Udemy-C#-Projects\BMES API Project\BMES API Project\BMES API Project\obj\Debug\netcoreapp3.1\BMES API Project.csproj.CoreCompileInputs.cache
+C:\Users\rowan\Documents\Personal\Personal\Personal\Work\Projects\Udemy-C#-Projects\BMES API Project\BMES API Project\BMES API Project\obj\Debug\netcoreapp3.1\BMES API Project.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\rowan\Documents\Personal\Personal\Personal\Work\Projects\Udemy-C#-Projects\BMES API Project\BMES API Project\BMES API Project\obj\Debug\netcoreapp3.1\staticwebassets\BMES API Project.StaticWebAssets.Manifest.cache
+C:\Users\rowan\Documents\Personal\Personal\Personal\Work\Projects\Udemy-C#-Projects\BMES API Project\BMES API Project\BMES API Project\obj\Debug\netcoreapp3.1\staticwebassets\BMES API Project.StaticWebAssets.xml
+C:\Users\rowan\Documents\Personal\Personal\Personal\Work\Projects\Udemy-C#-Projects\BMES API Project\BMES API Project\BMES API Project\obj\Debug\netcoreapp3.1\scopedcss\bundle\BMES API Project.styles.css
+C:\Users\rowan\Documents\Personal\Personal\Personal\Work\Projects\Udemy-C#-Projects\BMES API Project\BMES API Project\BMES API Project\obj\Debug\netcoreapp3.1\BMES API Project.RazorTargetAssemblyInfo.cache
+C:\Users\rowan\Documents\Personal\Personal\Personal\Work\Projects\Udemy-C#-Projects\BMES API Project\BMES API Project\BMES API Project\obj\Debug\netcoreapp3.1\BMES API Project.dll
+C:\Users\rowan\Documents\Personal\Personal\Personal\Work\Projects\Udemy-C#-Projects\BMES API Project\BMES API Project\BMES API Project\obj\Debug\netcoreapp3.1\BMES API Project.pdb
+C:\Users\rowan\Documents\Personal\Personal\Personal\Work\Projects\Udemy-C#-Projects\BMES API Project\BMES API Project\BMES API Project\obj\Debug\netcoreapp3.1\BMES API Project.genruntimeconfig.cache
