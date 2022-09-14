@@ -36,6 +36,14 @@ Steps:
 	2.2 Creating the following models: Product, Category & Brand
 		With regards to datetimeoff: https://stackoverflow.com/questions/4331189/datetime-vs-datetimeoffset
 	2.3 Executing database migrations for product catalogue models
+		2.3.1 Appsettings.json
+		2.3.2 Create DBContext in Database folder -> inherit from DBContext
+												  -> dbsets
+		2.3.3 StartUp -> add context to services, + database
+		2.3.4 Ensure that you have the correct tools, dotnet tool install --global dotnet-ef --version 3.1.0
+		      -> ensure that .NET Core SDK 3.0 is 100%.
+	    2.3.5 -> Execute migrations -> dotnet ef  migrations add *name*
+		      -> dotnet ef database update
 	2.3 Creating catalogue repository 
 	2.4 Creating catalogue DTOs
 	2.5 Creating catalogue service
