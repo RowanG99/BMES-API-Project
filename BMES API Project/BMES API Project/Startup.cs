@@ -27,7 +27,7 @@ namespace BMES_API_Project
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<dbContext>(optionsAction: options => options.UseSqlite(Configuration["Data:BMESAPIProject:ConnectionString"]));
+            services.AddDbContext<dbContext>(optionsAction: options => options.UseSqlite(Configuration["Data:BMESAPIProject:ConnectionString"]));   
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

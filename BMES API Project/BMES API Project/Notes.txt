@@ -27,6 +27,7 @@ Steps:
 										 -> shared fodler: 
 							   -> Repositories: 
 										 -> Implementations: 
+										 -> understand repositories better: https://codewithshadman.com/repository-pattern-csharp/#:~:text=Repository%20pattern%20C%23%20is%20a,view%20of%20the%20persistence%20layer.
 							   -> Services: 
 										 -> Implementations: 
 							   -> Messages: 
@@ -40,6 +41,7 @@ Steps:
 		2.3.2 Create DBContext in Database folder -> inherit from DBContext
 												  -> dbsets
 		2.3.3 StartUp -> add context to services, + database
+		              -> understand the startup file better https://www.c-sharpcorner.com/article/understanding-startup-class-in-asp-net-core/.
 		2.3.4 Ensure that you have the correct tools, dotnet tool install --global dotnet-ef --version 3.1.0
 		      -> ensure that .NET Core SDK 3.0 is 100%.
 	    2.3.5 -> Execute migrations -> dotnet ef  migrations add *name*

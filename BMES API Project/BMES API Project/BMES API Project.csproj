@@ -19,7 +19,6 @@
     <Folder Include="Messages\DTOs\" />
     <Folder Include="Messages\Response\" />
     <Folder Include="Messages\Request\" />
-    <Folder Include="Repository\Implementations\" />
     <Folder Include="Services\Implementations\" />
   </ItemGroup>
 
