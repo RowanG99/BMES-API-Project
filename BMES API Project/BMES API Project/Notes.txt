@@ -46,7 +46,13 @@ Steps:
 		      -> ensure that .NET Core SDK 3.0 is 100%.
 	    2.3.5 -> Execute migrations -> dotnet ef  migrations add *name*
 		      -> dotnet ef database update
-	2.3 Creating catalogue repository 
-	2.4 Creating catalogue DTOs
-	2.5 Creating catalogue service
-	2.6 Implementing product catalogue controller
+	2.4 Creating catalogue repository 
+		2.4.1 With regards to repos: 
+			  -> we have the implementation and the interface. We create our interfaces first and then our implementations.
+			     Our implementations inherit from our interfaces. https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application
+	2.5 Creating catalogue service: https://www.stevejgordon.co.uk/aspnet-core-dependency-injection-what-is-the-iservicecollection
+		-> transient vs singleton vs scope https://stackoverflow.com/questions/38138100/addtransient-addscoped-and-addsingleton-services-differences
+	2.6 Creating catalogue DTOs
+	    -> https://www.youtube.com/watch?v=F9M9bUq-0Z0
+		-> DTO vs Model member names should be different => security measure.
+	2.7 Implementing product catalogue controller

@@ -1,4 +1,6 @@
 using BMES_API_Project.Database;
+using BMES_API_Project.Repository;
+using BMES_API_Project.Repository.Implementations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -27,7 +29,10 @@ namespace BMES_API_Project
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<dbContext>(optionsAction: options => options.UseSqlite(Configuration["Data:BMESAPIProject:ConnectionString"]));   
+            services.AddDbContext<dbContext>(optionsAction: options => options.UseSqlite(Configuration["Data:BMESAPIProject:ConnectionString"]));
+            services.AddTransient<iBrandRepo, BrandRepo>();
+            services.AddTransient<iCategoryRepo, CategoryRepo>();
+            services.AddTransient<iProductRepo, ProductRepo>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
