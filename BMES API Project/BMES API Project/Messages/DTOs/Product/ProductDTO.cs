@@ -8,6 +8,7 @@ namespace BMES_API_Project.Messages.DTOs.Product
 {
     public class ProductDTO
     {
+        public long Id { get; set; }
         public string Name { get; set; }
         public string Slug { get; set; }
         public string Description { get; set; }
@@ -26,7 +27,7 @@ namespace BMES_API_Project.Messages.DTOs.Product
         public Category Category { get; set; }
         public long BrandId { get; set; }
         public Brand Brand { get; set; }
-        public ProductStatus ProductStatus { get; set; }
+        public int ProductStatus { get; set; }
         public DateTimeOffset CreatedDate { get; set; }
         public DateTimeOffset ModifiedDate { get; set; }
         public bool isDeleted { get; set; }

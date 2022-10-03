@@ -16,11 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Messages\Request\Category\" />
-    <Folder Include="Messages\Request\Product\" />
-    <Folder Include="Messages\Response\Brand\" />
-    <Folder Include="Messages\Response\Category\" />
-    <Folder Include="Messages\Response\Product\" />
     <Folder Include="Services\Implementations\" />
   </ItemGroup>
 

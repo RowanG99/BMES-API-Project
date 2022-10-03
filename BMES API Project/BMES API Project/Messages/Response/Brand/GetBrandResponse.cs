@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BMES_API_Project.Messages.Request.Brand
+namespace BMES_API_Project.Messages.Response.Brand
 {
-    public class CreateCategoryRequest
+    public class GetBrandResponse:ResponseBase
     {
         public BrandDTO Brand { get; set; }
     }

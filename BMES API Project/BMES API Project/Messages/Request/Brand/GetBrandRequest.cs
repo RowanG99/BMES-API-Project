@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace BMES_API_Project.Messages.Request.Brand
 {
-    public class GetBrandRequest
+    public class GetCategoryRequest
     {
         public long Id { get; set; }
     }

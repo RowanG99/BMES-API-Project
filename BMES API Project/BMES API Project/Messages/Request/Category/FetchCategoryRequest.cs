@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BMES_API_Project.Messages.Request.Brand
+namespace BMES_API_Project.Messages.Request.Category
 {
-    public class FetchCategoryRequest
+    public class FetchProductRequest
     {
         public int PageNumber { get; set; }
-        public int BrandsPerPage { get; set; }
+        public int CategoriesPerPage { get; set; }
     }
 }
