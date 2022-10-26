@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace BMES_API_Project.Messages.Request.Category
 {
-    public class FetchProductRequest
+    public class FetchCategoryRequest
     {
         public int PageNumber { get; set; }
         public int CategoriesPerPage { get; set; }

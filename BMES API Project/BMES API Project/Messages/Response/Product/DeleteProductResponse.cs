@@ -8,6 +8,6 @@ namespace BMES_API_Project.Messages.Response.Product
 {
     public class DeleteProductResponse : ResponseBase
     {
-        public ProductDTO ProductDTO { get; set; }
+        public ProductDTO Product { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace BMES_API_Project.Messages.Response.Product
 {
     public class FetchProductResponse : ResponseBase
     {
-        public int  CategoriesPerPage { get; set; }
+        public int  ProductsPerPage { get; set; }
         public bool HasPreviousPages { get; set; }
         public bool HasNextPages { get; set; }
         public int CurrentPage { get; set; }

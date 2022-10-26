@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace BMES_API_Project.Messages.Response.Category
 {
-    public class GetProductResponse:ResponseBase
+    public class GetCategoryResponse:ResponseBase
     {
-        public CategoryDTO CategoryDTO { get; set; }
+        public CategoryDTO Category { get; set; }
     }
 }

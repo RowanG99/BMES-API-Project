@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace BMES_API_Project.Messages.Request.Category
 {
-    public class DeleteProductRequest
+    public class DeleteCategoryRequest
     {
         public long Id { get; set; }
     }

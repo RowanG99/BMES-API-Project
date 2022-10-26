@@ -7268,11 +7268,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rowan\\Documents\\Personal\\Personal\\Personal\\Work\\Projects\\Udemy-C#-Projects\\BMES API Project\\BMES API Project\\BMES API Project\\BMES API Project.csproj",
+      "projectUniqueName": "C:\\Users\\rowan\\Documents\\Personal\\Projects\\Udemy-C#-Projects\\BMES API Project\\BMES API Project\\BMES API Project\\BMES API Project.csproj",
       "projectName": "BMES API Project",
-      "projectPath": "C:\\Users\\rowan\\Documents\\Personal\\Personal\\Personal\\Work\\Projects\\Udemy-C#-Projects\\BMES API Project\\BMES API Project\\BMES API Project\\BMES API Project.csproj",
+      "projectPath": "C:\\Users\\rowan\\Documents\\Personal\\Projects\\Udemy-C#-Projects\\BMES API Project\\BMES API Project\\BMES API Project\\BMES API Project.csproj",
       "packagesPath": "C:\\Users\\rowan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rowan\\Documents\\Personal\\Personal\\Personal\\Work\\Projects\\Udemy-C#-Projects\\BMES API Project\\BMES API Project\\BMES API Project\\obj\\",
+      "outputPath": "C:\\Users\\rowan\\Documents\\Personal\\Projects\\Udemy-C#-Projects\\BMES API Project\\BMES API Project\\BMES API Project\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BMES_API_Project.Messages.Response.Category
 {
-    public class FetchProductResponse : ResponseBase
+    public class FetchCategoryResponse : ResponseBase
     {
         public int  CategoriesPerPage { get; set; }
         public bool HasPreviousPages { get; set; }

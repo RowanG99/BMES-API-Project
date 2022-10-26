@@ -8,6 +8,7 @@ namespace BMES_API_Project.Messages.Request.Product
 {
     public class UpdateProductRequest
     {
+        public int Id { get; set; }
         public ProductDTO Product { get; set; }
     }
 }

@@ -8,6 +8,6 @@ namespace BMES_API_Project.Messages.Response.Brand
 {
     public class CreateBrandResponse : ResponseBase
     {
-        public BrandDTO Brand {get;set;}
+        public BrandDTO Brand { get; set;}
     }
 }

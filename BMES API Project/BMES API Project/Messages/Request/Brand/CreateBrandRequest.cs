@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BMES_API_Project.Messages.Request.Brand
 {
-    public class CreateCategoryRequest
+    public class CreateBrandRequest
     {
         public BrandDTO Brand { get; set; }
     }

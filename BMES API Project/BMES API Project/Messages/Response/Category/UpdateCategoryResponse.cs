@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace BMES_API_Project.Messages.Response.Category
 {
-    public class UpdateProductResponse : ResponseBase
+    public class UpdateCategoryResponse : ResponseBase
     {
     }
 }

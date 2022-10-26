@@ -8,6 +8,7 @@ namespace BMES_API_Project.Messages.Request.Category
 {
     public class UpdateCategoryRequest
     {
+        public int Id { get; set; }
         public CategoryDTO Category { get; set; }
     }
 }
