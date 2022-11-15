@@ -39,6 +39,7 @@ namespace BMES_API_Project
             services.AddTransient<iBrandService, BrandService>();
             services.AddTransient<iCategoryService, CatergoryService>();
             services.AddTransient<iProductService, ProductService>();
+            services.AddTransient<iCatalogueService, CatalogueService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
