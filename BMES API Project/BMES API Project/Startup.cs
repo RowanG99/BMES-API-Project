@@ -1,6 +1,8 @@
 using BMES_API_Project.Database;
 using BMES_API_Project.Repository;
 using BMES_API_Project.Repository.Implementations;
+using BMES_API_Project.Services;
+using BMES_API_Project.Services.Implementations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -33,6 +35,10 @@ namespace BMES_API_Project
             services.AddTransient<iBrandRepo, BrandRepo>();
             services.AddTransient<iCategoryRepo, CategoryRepo>();
             services.AddTransient<iProductRepo, ProductRepo>();
+
+            services.AddTransient<iBrandService, BrandService>();
+            services.AddTransient<iCategoryService, CatergoryService>();
+            services.AddTransient<iProductService, ProductService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
