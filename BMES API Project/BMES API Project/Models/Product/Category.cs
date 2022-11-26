@@ -1,8 +1,4 @@
 ﻿using BMES_API_Project.Models.Shared;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace BMES_API_Project.Models.Product
 {

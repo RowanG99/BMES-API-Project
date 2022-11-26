@@ -1,8 +1,4 @@
 ﻿using BMES_API_Project.Models.Shared;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace BMES_API_Project.Models.Product
 {
@@ -20,7 +16,7 @@ namespace BMES_API_Project.Models.Product
         public decimal OldPrice { get; set; }
         public string ImageUrl { get; set; }
         public int QuantityInStock { get; set; }
-        public bool IsBestSeller { get; set; }
+        public bool IsBestseller { get; set; }
         public bool IsFeatured { get; set; }
         public long CategoryId { get; set; }
         public Category Category { get; set; }

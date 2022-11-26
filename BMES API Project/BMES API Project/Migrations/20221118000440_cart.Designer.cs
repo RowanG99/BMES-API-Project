@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BMES_API_Project.Migrations
 {
     [DbContext(typeof(dbContext))]
-    [Migration("20220914210448_initial")]
-    partial class initial
+    [Migration("20221118000440_cart")]
+    partial class cart
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -115,7 +115,7 @@ namespace BMES_API_Project.Migrations
                     b.Property<string>("ImageUrl")
                         .HasColumnType("TEXT");
 
-                    b.Property<bool>("IsBestSeller")
+                    b.Property<bool>("IsBestseller")
                         .HasColumnType("INTEGER");
 
                     b.Property<bool>("IsFeatured")

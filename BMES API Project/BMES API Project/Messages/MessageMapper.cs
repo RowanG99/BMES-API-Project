@@ -1,5 +1,7 @@
-﻿using BMES_API_Project.Messages.DTOs.Product;
+﻿using BMES_API_Project.Messages.DTOs.Cart;
+using BMES_API_Project.Messages.DTOs.Product;
 using BMES_API_Project.Models;
+using BMES_API_Project.Models.Cart;
 using BMES_API_Project.Models.Product;
 using System;
 using System.Collections.Generic;
@@ -30,18 +32,21 @@ namespace BMES_API_Project.Messages
 
         public BrandDTO MapToBrandDto(Brand brand)
         {
-            return new BrandDTO
+            var brandDto = new BrandDTO();
+            if(brand != null)
             {
-                Id = brand.Id, 
-                Name = brand.Name, 
-                Slug = brand.Slug, 
-                Description = brand.Description,
-                MetaDescription = brand.MetaDescription, 
-                MetaKeywords = brand.MetaKeywords, 
-                BrandStatus = (int)brand.BrandStatus, 
-                ModifiedDate = brand.ModifiedDate, 
-                isDeleted = brand.isDeleted
-            };
+                brandDto.Id = brand.Id;
+                brandDto.Name = brand.Name;
+                brandDto.Slug = brand.Slug;
+                brandDto.Description = brand.Description;
+                brandDto.MetaDescription = brand.MetaDescription;
+                brandDto.MetaKeywords = brand.MetaKeywords;
+                brandDto.BrandStatus = (int)brand.BrandStatus;
+                brandDto.ModifiedDate = brand.ModifiedDate;
+                brandDto.isDeleted = brand.isDeleted;
+            }
+
+            return brandDto;
         }
         public List<BrandDTO> MapToBrandDtos(IEnumerable<Brand> brands)
         {
@@ -82,6 +87,7 @@ namespace BMES_API_Project.Messages
                 MetaDescription = category.MetaDescription,
                 MetaKeywords = category.MetaKeywords,
                 CategoryStatus = (int)category.CategoryStatus,
+                ModifiedDate = category.ModifiedDate,
                 isDeleted = category.isDeleted
             };
         }
@@ -112,14 +118,14 @@ namespace BMES_API_Project.Messages
                 SalePrice = productDto.SalePrice, 
                 OldPrice = productDto.OldPrice,
                 ImageUrl = productDto.ImageUrl,
-                QuantityInStock = productDto.QuantityInStock, 
-                IsBestSeller = productDto.IsBestSeller, 
+                QuantityInStock = productDto.QuantityInStock,
+                IsBestseller = productDto.IsBestseller, 
                 CategoryId = productDto.CategoryId,
                 BrandId = productDto.BrandId, 
                 ProductStatus = (ProductStatus)productDto.ProductStatus, 
-                CreatedDate = productDto.CreatedDate,
+                CreatedDate = productDto.CreateDate,
                 ModifiedDate = productDto.ModifiedDate,
-                isDeleted = productDto.isDeleted
+                isDeleted = productDto.IsDeleted
             };
 
             return product;
@@ -127,29 +133,33 @@ namespace BMES_API_Project.Messages
 
         public ProductDTO MapToProductDto(Product product)
         {
-            return new ProductDTO
+            var productDto = new ProductDTO();
+
+            if (product != null)
             {
-                Id = product.Id,
-                Name = product.Name,
-                Slug = product.Slug,
-                Description = product.Description,
-                MetaDescription = product.MetaDescription,
-                MetaKeywords = product.MetaKeywords,
-                SKU = product.SKU,
-                Model = product.Model,
-                Price = product.Price,
-                SalePrice = product.SalePrice,
-                OldPrice = product.OldPrice,
-                ImageUrl = product.ImageUrl,
-                QuantityInStock = product.QuantityInStock,
-                IsBestSeller = product.IsBestSeller,
-                CategoryId = product.CategoryId,
-                BrandId = product.BrandId,
-                ProductStatus = (int)product.ProductStatus,
-                CreatedDate = product.CreatedDate,
-                ModifiedDate = product.ModifiedDate,
-                isDeleted = product.isDeleted
+                productDto.Id = product.Id;
+                productDto.Name = product.Name;
+                productDto.Slug = product.Slug;
+                productDto.Description = product.Description;
+                productDto.MetaDescription = product.MetaDescription;
+                productDto.MetaKeywords = product.MetaKeywords;
+                productDto.SKU = product.MetaDescription;
+                productDto.Model = product.MetaKeywords;
+                productDto.Price = product.Price;
+                productDto.SalePrice = product.SalePrice;
+                productDto.OldPrice = product.OldPrice;
+                productDto.ImageUrl = product.ImageUrl;
+                productDto.QuantityInStock = product.QuantityInStock;
+                productDto.IsBestseller = product.IsBestseller;
+                productDto.CategoryId = product.CategoryId;
+                productDto.BrandId = product.BrandId;
+                productDto.ProductStatus = (int)product.ProductStatus;
+                productDto.CreateDate = product.CreatedDate;
+                productDto.ModifiedDate = product.ModifiedDate;
+                productDto.IsDeleted = product.isDeleted;
             };
+
+            return productDto;
         }
 
         public List<ProductDTO> MapToProductDtos(IEnumerable<Product> products)
@@ -161,6 +171,72 @@ namespace BMES_API_Project.Messages
                 productDtos.Add(productDto); 
             }
             return productDtos;
+        }
+
+        public CartDTO MaptoCartDto(Cart cart)
+        {
+            var cartDto = new CartDTO(); 
+            if(cart != null)
+            {
+                cartDto.Id = cart.Id;
+                cartDto.UniqueCartId = cart.UniqueCartId;
+                cartDto.CartStatues = (int)cart.CartStatus;
+                cartDto.CreateDate = cart.CreatedDate;
+                cartDto.ModifiedDate = cart.ModifiedDate;
+                cartDto.isDeleted = cart.isDeleted; 
+            }
+            return cartDto;
+        }
+
+        public Cart MapToCart(CartDTO cartDTO)
+        {
+            return new Cart
+            {
+                Id = cartDTO.Id,
+                UniqueCartId = cartDTO.UniqueCartId,
+                CartStatus = (CartStatus)cartDTO.CartStatues,
+                CreatedDate = cartDTO.CreateDate,
+                ModifiedDate = cartDTO.ModifiedDate,
+                isDeleted = cartDTO.isDeleted
+            };
+        }
+
+        public CartItemDTO MaptoCartItemDto(CartItem cartItem)
+        {
+            CartItemDTO cartItemDTO = null; 
+            if(cartItem.Product != null)
+            {
+                var productDto = MapToProductDto(cartItem.Product);
+                cartItemDTO = new CartItemDTO
+                {
+                    Id = cartItem.Id,
+                    CartId = cartItem.CartId,
+                    Product = productDto,
+                    Quantity = cartItem.Quantity
+                }; 
+            }
+            return cartItemDTO; 
+        }
+
+        public CartItem MaptoCartItem(CartItemDTO cartItemDTO)
+        {
+            return new CartItem
+            {
+                CartId = cartItemDTO.Id,
+                ProductId = cartItemDTO.Product.Id,
+                Quantity = cartItemDTO.Quantity
+            }; 
+        }
+
+        public List<CartItemDTO> MaptoCartItemDto(IEnumerable<CartItem> cartItems)
+        {
+            var cartItemDtos = new List<CartItemDTO>(); 
+            foreach(var cartIem in cartItems)
+            {
+                var cartItemDto = MaptoCartItemDto(cartIem);
+                cartItemDtos.Add(cartItemDto); 
+            }
+            return cartItemDtos; 
         }
     }
 }

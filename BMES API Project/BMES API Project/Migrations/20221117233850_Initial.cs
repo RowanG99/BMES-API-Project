@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BMES_API_Project.Migrations
 {
-    public partial class initial : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -70,7 +70,7 @@ namespace BMES_API_Project.Migrations
                     OldPrice = table.Column<decimal>(nullable: false),
                     ImageUrl = table.Column<string>(nullable: true),
                     QuantityInStock = table.Column<int>(nullable: false),
-                    IsBestSeller = table.Column<bool>(nullable: false),
+                    IsBestseller = table.Column<bool>(nullable: false),
                     IsFeatured = table.Column<bool>(nullable: false),
                     CategoryId = table.Column<long>(nullable: false),
                     BrandId = table.Column<long>(nullable: false),

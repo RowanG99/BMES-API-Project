@@ -21,15 +21,13 @@ namespace BMES_API_Project.Messages.DTOs.Product
         public decimal OldPrice { get; set; }
         public string ImageUrl { get; set; }
         public int QuantityInStock { get; set; }
-        public bool IsBestSeller { get; set; }
+        public bool IsBestseller { get; set; }
         public bool IsFeatured { get; set; }
         public long CategoryId { get; set; }
-        public Category Category { get; set; }
         public long BrandId { get; set; }
-        public Brand Brand { get; set; }
         public int ProductStatus { get; set; }
-        public DateTimeOffset CreatedDate { get; set; }
+        public DateTimeOffset CreateDate { get; set; }
         public DateTimeOffset ModifiedDate { get; set; }
-        public bool isDeleted { get; set; }
+        public bool IsDeleted { get; set; }
     }
 }
