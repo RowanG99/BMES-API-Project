@@ -1,10 +1,6 @@
 ﻿using BMES_API_Project.Database;
 using BMES_API_Project.Models.Product;
-using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace BMES_API_Project.Repository.Implementations
 {

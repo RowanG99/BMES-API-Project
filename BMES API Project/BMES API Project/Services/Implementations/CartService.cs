@@ -121,7 +121,7 @@ namespace BMES_API_Project.Services.Implementations
             var uniqueId = UniqueCartId();
             var cart = _cartRepo.GetAllCarts().FirstOrDefault(c => c.UniqueCartId == uniqueId);
             return cart;
-        }
+            }
 
             public FetchItemResponse FetchCart()
             {

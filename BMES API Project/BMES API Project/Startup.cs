@@ -34,15 +34,25 @@ namespace BMES_API_Project
             });
 
             services.AddDbContext<dbContext>(optionsAction: options => options.UseSqlite(Configuration["Data:BMESAPIProject:ConnectionString"]));
+
             services.AddTransient<iBrandRepo, BrandRepo>();
             services.AddTransient<iCategoryRepo, CategoryRepo>();
             services.AddTransient<iProductRepo, ProductRepo>();
+            services.AddTransient<iAddressRepo, AddressRepo>();
+            services.AddTransient<iPersonRepo, PersonRepo>();
+            services.AddTransient<iCustomerRepo, CustomerRepo>();
+            services.AddTransient<iCartRepo, CartRepo>();
+            services.AddTransient<iCartItemRepo, CartItemRepo>();
+            services.AddTransient<iPersonRepo, PersonRepo>();
+            services.AddTransient<iOrderRepo, OrderRepo>();
 
             services.AddTransient<iBrandService, BrandService>();
             services.AddTransient<iCategoryService, CatergoryService>();
             services.AddTransient<iProductService, ProductService>();
             services.AddTransient<iCatalogueService, CatalogueService>();
-
+            services.AddTransient<iOrderService, OrderService>();
+            services.AddTransient<iCheckoutService, CheckoutService>();
+            services.AddTransient<iCartSevice, CartService>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }
 
